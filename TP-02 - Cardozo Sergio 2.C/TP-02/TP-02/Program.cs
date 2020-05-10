@@ -35,6 +35,7 @@ namespace TP_02_2018
             estacionamiento += a2;
             estacionamiento += a3;
             estacionamiento += a4;
+
             Console.WriteLine(estacionamiento.ToString());
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
@@ -49,17 +50,17 @@ namespace TP_02_2018
             // Vuelvo a agregar c2
             estacionamiento += c2;
             // Muestro solo Moto
-            Console.WriteLine(estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Moto));
+            Console.WriteLine(Estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Moto));
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.Beep();            
             Console.Clear();
             // Muestro solo Automovil
-            Console.WriteLine(estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Automovil));
+            Console.WriteLine(Estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Automovil));
             Console.WriteLine("<-----------PRESIONE UNA TECLA PARA CONTINUAR----------->");
             Console.ReadKey();
             Console.Clear();
             // Muestro solo Camioneta
-            Console.WriteLine(estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Camioneta));
+            Console.WriteLine(Estacionamiento.Mostrar(estacionamiento, Estacionamiento.ETipo.Camioneta));
             Console.WriteLine("<-------------PRESIONE UNA TECLA PARA SALIR------------->");
             Console.ReadKey();
         }
