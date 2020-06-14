@@ -91,7 +91,7 @@ namespace Entidades
         /// <returns></returns>
         public override string ToString()
         {
-            return Mostrar(this, ETipo.Todos);
+            return Estacionamiento.Mostrar(this, ETipo.Todos);
         }
         #endregion
 
